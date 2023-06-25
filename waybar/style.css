@@ -1,0 +1,159 @@
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 0px;
+}
+
+window#waybar {
+  background: #191724;
+  border-bottom: 1px solid #282828;
+  color: #e0def4;
+}
+
+#workspaces {
+  background: #1f1d2e;
+  margin: 5px 5px 5px 5px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 16px;
+  border: solid 0px #f4d9e1;
+}
+#workspaces button {
+  padding: 0px 5px;
+  border-radius: 16px;
+  /* color: #ebbcba; */
+}
+
+#workspaces button.active {
+  background-color: transparent;
+  color: #f6c177;
+  border-radius: 16px;
+}
+
+#workspaces button:hover {
+  background-color: #e6b9c6;
+  color: black;
+  border-radius: 16px;
+}
+
+#custom-date,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#custom-randwall,
+#custom-launcher {
+  background: transparent;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 8px;
+  border: solid 0px #f4d9e1;
+}
+
+#custom-date {
+  color: #d3869b;
+}
+
+#custom-power {
+  color: #24283b;
+  background-color: #db4b4b;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  padding: 5px 10px;
+}
+
+#tray {
+  background: transparent;
+  color: #e6b9c6;
+  margin: 5px 5px 5px 5px;
+  border-radius: 16px;
+  padding: 0px 5px;
+  /*border-right: solid 1px #282738;*/
+}
+
+#clock {
+  background: #f6c177;
+  color: #1f1d2e;
+  border-radius: 0px 0px 0px 24px;
+  padding-left: 13px;
+  padding-right: 15px;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#pulseaudio {
+  background: #1f1d2e;
+  border-radius: 8px;
+  margin-left: 0px;
+}
+
+#pulseaudio.muted {
+  background: transparent;
+  color: #928374;
+  border-radius: 8px;
+  margin-left: 0px;
+}
+
+#custom-playerctl {
+  background: #1f1d2e;
+  padding-left: 15px;
+  padding-right: 14px;
+  border-radius: 16px;
+  /*border-left: solid 1px #282738;*/
+  /*border-right: solid 1px #282738;*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 16px;
+}
+
+#custom-playerlabel {
+  background: #f6c177;
+  color: #1f1d2e;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 16px;
+  /*border-left: solid 1px #282738;*/
+  /*border-right: solid 1px #282738;*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#window {
+  background: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#cpu {
+  background: #1f1d2e;
+  border-radius: 16px;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#memory {
+  background: #1f1d2e;
+  border-radius: 16px;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
