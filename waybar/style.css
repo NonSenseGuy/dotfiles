@@ -148,6 +148,7 @@ window#waybar {
   font-weight: bold;
 }
 
+#custom-wl-gammarelay-temperature,
 #memory {
   background: #1f1d2e;
   border-radius: 16px;

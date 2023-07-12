@@ -15,6 +15,7 @@ export XDG_DOCUMENTS_DIR="$HOME/Documents"
 export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
+export MOZ_ENABLE_WAYLAND=1
 # FZF bases
 export FZF_DEFAULT_OPTS="
   --color fg:#cdd6f4

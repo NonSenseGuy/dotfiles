@@ -1,4 +1,4 @@
-#files: 973	version: 5.9
+#files: 978	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -132,6 +132,7 @@ _comps=(
 'bunzip2' '_bzip2'
 'burst' '_mh'
 'busctl' '_busctl'
+'bwrap' '_bwrap'
 'bzcat' '_bzip2'
 'bzegrep' '_grep'
 'bzfgrep' '_grep'
@@ -143,6 +144,11 @@ _comps=(
 'cabal' '_cabal'
 'cal' '_cal'
 'calendar' '_calendar'
+'calibre' '_calibre'
+'calibredb' '_calibre'
+'calibre-debug' '_calibre'
+'calibre-server' '_calibre'
+'calibre-smtp' '_calibre'
 'cap' '_cap'
 'cargo' '_cargo'
 'cask' '_cask'
@@ -198,6 +204,7 @@ _comps=(
 'cmp' '_cmp'
 'co' '_rcs'
 'code' '_code'
+'codium' '_codium'
 'coffee' '_coffee'
 'column' '_column'
 'comb' '_sccs'
@@ -292,6 +299,8 @@ _comps=(
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
 'doas' '_doas'
+'docker' '_docker'
+'dockerd' '_docker'
 'docpad' '_docpad'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
@@ -315,6 +324,11 @@ _comps=(
 'dwb' '_webbrowser'
 'e2label' '_e2label'
 'eatmydata' '_precommand'
+'ebook-convert' '_calibre'
+'ebook-edit' '_calibre'
+'ebook-meta' '_calibre'
+'ebook-polish' '_calibre'
+'ebook-viewer' '_calibre'
 'ecasound' '_ecasound'
 'ecdsautil' '_ecdsautil'
 'echotc' '_echotc'
@@ -365,6 +379,7 @@ _comps=(
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
 'feh' '_feh'
+'fetch-ebook-metadata' '_calibre'
 'fetchmail' '_fetchmail'
 'ffind' '_ffind'
 'ffmpeg' '_ffmpeg'
@@ -773,9 +788,12 @@ _comps=(
 'lpr' '_lp'
 'lprm' '_lp'
 'lpstat' '_lp'
+'lrf2lrs' '_calibre'
+'lrfviewer' '_calibre'
 'ls' '_ls'
 'lsattr' '_lsattr'
 'lsblk' '_lsblk'
+'lsd' '_lsd'
 'lsdiff' '_patchutils'
 'lsinitcpio' '_mkinitcpio'
 'lsmod' '_modutils'
@@ -1872,9 +1890,10 @@ autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _tmuxp _tox _tsc _ts-node _udisksctl \
             _ufw _virtualbox _vnstat _wemux _wg-quick \
             _xsel _yarn _zcash-cli _zinit _bat \
-            _bluetoothctl _bootctl _busctl _cargo _checkupdates \
-            _coredumpctl _curl _hostnamectl _journalctl _kernel-install \
-            _libinput _localectl _loginctl _machinectl _meson \
+            _bluetoothctl _bootctl _busctl _bwrap _calibre \
+            _cargo _checkupdates _codium _coredumpctl _curl \
+            _docker _hostnamectl _journalctl _kernel-install _libinput \
+            _localectl _loginctl _lsd _machinectl _meson \
             _mkinitcpio _mpv _networkctl _ninja _oomctl \
             _paccache _pacdiff _paclist _paclog-pkglist _pacman \
             _pacscripts _pacsearch _pacsort _pactree _playerctl \

@@ -13,7 +13,8 @@
     "cpu",
     "memory",
     "pulseaudio",
-    "clock",
+    "custom/wl-gammarelay-temperature",
+    "clock"
   ],
 
   "wlr/workspaces": {
@@ -50,7 +51,7 @@
     "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
     "on-click-middle": "playerctl play-pause",
     "on-click": "playerctl previous",
-    "on-click-right": "playerctl next",
+    "on-click-right": "playerctl next"
   },
 
   "cpu": {
@@ -97,18 +98,15 @@
     "tooltip": false
   },
 
+  "custom/wl-gammarelay-temperature": {
+    "format": "{} ",
+    "exec": "wl-gammarelay --subscribe Temperature",
+    "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
+    "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
+  },
+
   "clock": {
     "format": "{: %d/%m  %r}",
     "tooltip-format": "<big>{:%y %b}</big>\n<tt><small>{calendar}</small></tt>"
-  },
-
-  "temperature": {
-    "thermal-zone": 1,
-    "format": "{temperatureC}°C ",
-    "format-alt-click": "click-right",
-    "format-alt": " {temperatureC}°C",
-    "critical-threshold": 70,
-    "format-critical": " {temperatureC}°C",
-    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
   }
 }
